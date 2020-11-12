@@ -15,6 +15,7 @@ function añadir(frutas1){
 function muestra(){
     
 }
+
 class Frutas{
     constructor(kilos, precio, nombre){
         this.kilos = kilos;

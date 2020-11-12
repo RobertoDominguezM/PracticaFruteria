@@ -3,61 +3,77 @@
         <title>Fruteria R.D.M</title>
         <meta charset="UTF-8">
         <script src="../js/fruteria.js"></script>
-        <link rel="stylesheet" href="../css/fruteria.css">
+        <link type="text/css" rel="stylesheet" href="../css/fruteria.css">
     </head>
     <body>
         <header>
             <h1>Frutería</h1>
         </header>
-        <div id="izquierda">
-            <div>
-                <img src="../imagenes/sandia.jpg" width="400px" height="200px" onclick="añadir('sandia')">
+        
+        <div id="frutas">
+            <div class="colocar">
+                <img src="../imagenes/sandia.jpg" width="200px" height="100px" onclick="añadir('sandia')">
                 <h3>Sandias    2.45 €/kg</h3>
             </div>
-            <div>
-                <img src="../imagenes/naranja.jpg" width="400px" height="200px" onclick="añadir('naranja')">
+            <div class="colocar">
+                <img src="../imagenes/naranja.jpg" width="200px" height="100px" onclick="añadir('naranja')">
                 <h3>Naranjas    1.76 €/kg</h3>
             </div>
-            <div>
-                <img src="../imagenes/melocotones.jpg" width="400px" height="200px" onclick="añadir('melocotones')">
+            <div class="colocar">
+                <img src="../imagenes/melocotones.jpg" width="200px" height="100px" onclick="añadir('melocotones')">
                 <h3>Melocotones    2.62 €/kg</h3>
             </div>
-            <div>
-                <img src="../imagenes/mandarinas.jpg" width="400px" height="200px" onclick="añadir('mandarina')">
+            <div class="colocar">
+                <img src="../imagenes/mandarinas.jpg" width="200px" height="100px" onclick="añadir('mandarina')">
                 <h3>Mandarinas    1.24 €/kg</h3>
             </div>
-            <div>
-                <img src="../imagenes/manzana.jpg" width="400px" height="200px" onclick="añadir('manzana')">
+            <div class="colocar">
+                <img src="../imagenes/manzana.jpg" width="200px" height="100px" onclick="añadir('manzana')">
                 <h3>Manzanas    1.45 €/kg</h3>
             </div>
-        </div>
-        <div id="derecha">
-            <div>
-                <img src="../imagenes/platano.jpg" width="400px" height="200px" onclick="añadir('platano')">
+            <div class="colocar">
+                <img src="../imagenes/platano.jpg" width="200px" height="100px" onclick="añadir('platano')">
                 <h3>Plátanos    1.84 €/kg</h3>
             </div>
-            <div>
-                <img src="../imagenes/cerezas.jpg" width="400px" height="200px" onclick="añadir('cerezas')">
+            <div class="colocar">
+                <img src="../imagenes/cerezas.jpg" width="200px" height="100px" onclick="añadir('cerezas')">
                 <h3>Cerezas    3.84 €/kg</h3>
             </div>
-            <div>
-                <img src="../imagenes/kiwi.jpeg" width="400px" height="200px" onclick="añadir('kiwi')">
+            <div class="colocar">
+                <img src="../imagenes/kiwi.jpeg" width="200px" height="100px" onclick="añadir('kiwi')">
                 <h3>Kiwis    2.71 €/kg</h3>
             </div>
-            <div>
-                <img src="../imagenes/fresa.jpg" width="400px" height="200px" onclick="añadir('fresa')">
+            <div class="colocar">
+                <img src="../imagenes/fresa.jpg" width="200px" height="100px" onclick="añadir('fresa')">
                 <h3>Fresas    2.48 €/kg</h3>
             </div>
-            <div>
-                <img src="../imagenes/piña.jpg" width="400px" height="200px" onclick="añadir('piña')">
+            <div class="colocar">
+                <img src="../imagenes/piña.jpg" width="200px" height="100px" onclick="añadir('piña')">
                 <h3>Piñas    3.74 €/kg</h3>
             </div>
         </div>
         <div id="centro">
              <div>
-                <input type="button" value="totalCompra" onclick="enviarCompra()">
+                <input type="button" value="Total compra" onclick="enviarCompra()">
             </div>
         </div>
-       
+        <div>
+            <form name="formularioEntrada" id="formulario">
+                <h3>Nombre</h3>
+                <input type="text" name="nombre" id="nom">
+                <h3>Apellidos</h3>
+                <input type="text" name="apellidos" id="ape">
+                <h3>Dirección</h3>
+                <input type="text" name="direccion" id="dir">
+                <h3>Email</h3>
+                <input type="email" name="email" id="email">
+                <h3>Pago</h3>
+                <label>Tarjeta de crédito<input type="radio" id="tarjeta" name="tar"></label><br>
+                <label>Contrarrembolso<input type="radio" id="contra" name="Contrarrembolso"></label><br>
+                <h3>Targeta cliente</h3>
+                <label>Si<input type="radio" id="tCliente" name="tClienteSi"></label><br>
+                <label>No<input type="radio" id="tCliente" name="tClienteNo"></label><br>
+            </form>
+        </div>
     </body>
 </html>
